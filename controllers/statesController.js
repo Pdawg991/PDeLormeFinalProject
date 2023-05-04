@@ -1,9 +1,11 @@
 const State = require('../model/State');
+const data = {}
+data.states = require('../model/states.json');
 
 const getAllStates = async (req, res) => {
     const states = await State.find();
     if (!states) return res.status(204).json({ 'message': 'No states found.' });
-    res.json(states);
+    res.send(data.states);
 }
 
 const createNewState = async (req, res) => {
@@ -50,19 +52,29 @@ const deleteState = async (req, res) => {
 }
 
 const getState = async (req, res) => {
-    if (!req?.params?.id) return res.status(400).json({ 'message': 'State code required.' });
-
-    const state = await State.findOne({ _id: req.params.id }).exec();
+    if (!req?.params?.code) return res.status(400).json({ 'message': 'State code required.' });
+    
+    const state = await State.findOne({}, {code:res.body.code, _id:0}).exec();
     if (!state) {
         return res.status(204).json({ "message": `No state matches code ${req.params.id}.` });
     }
     res.json(state);
 }
 
+const getStatePopulation = async (req, res) => {
+    let population =  0;
+    for (i = 0; i < 50; i++){
+        if (data.states[i]['code'] == req.params.code){
+            population = data.states[i]['population']
+        }
+    }
+    res.json({"code": req.params.code, "population" : population});
+}
 module.exports = {
     getAllStates,
     createNewState,
     updateState,
     deleteState,
-    getState
+    getState,
+    getStatePopulation
 }

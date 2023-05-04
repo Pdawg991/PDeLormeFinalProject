@@ -8,7 +8,14 @@ router.route('/')
     .put(statesController.updateState)
     .delete(statesController.deleteState);
 
-router.route('/:id')
+router.route('/:code')
     .get(statesController.getState);
-
+router.route('/:code/population')
+    .get(statesController.getStatePopulation);
+router.route('/:code')
+    .get(statesController.getState);
+router.route('/:code')
+    .get(statesController.getState);
+router.route('/:code')
+    .get(statesController.getState);
 module.exports = router;

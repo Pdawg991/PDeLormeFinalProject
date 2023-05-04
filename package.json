@@ -7,9 +7,6 @@
     "start": "node server",
     "dev": "nodemon server"
   },
-  "engines": {
-    "node": "14.x"
-  },
   "author": "Dave Gray",
   "license": "ISC",
   "dependencies": {
