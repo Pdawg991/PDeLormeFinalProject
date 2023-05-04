@@ -10,7 +10,7 @@ const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
 const connectDB = require('./config/dbConn');
-const PORT = process.env.PORT || 3500;
+const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
 connectDB();
