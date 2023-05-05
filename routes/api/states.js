@@ -12,10 +12,10 @@ router.route('/:code')
     .get(statesController.getState);
 router.route('/:code/population')
     .get(statesController.getStatePopulation);
-router.route('/:code')
-    .get(statesController.getState);
-router.route('/:code')
-    .get(statesController.getState);
+router.route('/:code/nickname')
+    .get(statesController.getStateNickname);
+router.route('/:code/capital')
+    .get(statesController.getStateCapital);
 router.route('/:code')
     .get(statesController.getState);
 module.exports = router;

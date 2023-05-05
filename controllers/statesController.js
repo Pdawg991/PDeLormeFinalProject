@@ -70,11 +70,31 @@ const getStatePopulation = async (req, res) => {
     }
     res.json({"code": req.params.code, "population" : population});
 }
+const getStateNickname = async (req, res) => {
+    let nickname =  "";
+    for (i = 0; i < 50; i++){
+        if (data.states[i]['code'] == req.params.code){
+            nickname = data.states[i]['nickname']
+        }
+    }
+    res.json({"code": req.params.code, "nickname" : nickname});
+}
+const getStateCapital = async (req, res) => {
+    let capital_city =  "";
+    for (i = 0; i < 50; i++){
+        if (data.states[i]['code'] == req.params.code){
+            capital_city = data.states[i]['capital_city']
+        }
+    }
+    res.json({"code": req.params.code, "capital_city" : capital_city});
+}
 module.exports = {
     getAllStates,
     createNewState,
     updateState,
     deleteState,
     getState,
-    getStatePopulation
+    getStatePopulation,
+    getStateCapital,
+    getStateNickname
 }

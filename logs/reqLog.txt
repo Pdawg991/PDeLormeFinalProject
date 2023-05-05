@@ -202,3 +202,9 @@
 20230504	15:33:07	c60fcc05-69f5-4ad6-b421-0d8d34453a27	GET	undefined	/states/CA/population
 20230504	15:33:16	d98758e9-9f9b-41ed-94f0-2ff2f1311519	GET	undefined	/states/PA/population
 20230504	15:33:19	e8f4a77d-8ce2-4074-af9e-71129ba6576b	GET	undefined	/states/VA/population
+20230504	16:39:38	22850836-be03-4b1d-a519-5469643a3302	GET	undefined	/states/VA/population
+20230504	16:39:43	4d9ad323-7d09-431d-ab31-9bc3b35b6275	GET	undefined	/states/VA/capital
+20230504	16:42:05	2401c7ef-cfed-4c98-a24b-09b17ea23af3	GET	undefined	/states/VA/capital
+20230504	16:42:40	f0faa1c1-6936-41de-a535-72ecad863b14	GET	undefined	/states/VA/capital
+20230504	16:42:44	51294277-6227-4cfc-83cf-366599223c68	GET	undefined	/states/CA/capital
+20230504	16:42:59	f3de70df-bf54-4970-8416-5e87867d862d	GET	undefined	/states/PA/capital
