@@ -1,6 +1,5 @@
 const allowedOrigins = [
-    'https://www.yoursite.com',
-    'http://127.0.0.1:5500',
+    'https://dazzling-snickerdoodle-777101.netlify.app',
     'http://localhost:3500'
 ];
 
