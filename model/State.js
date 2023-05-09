@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+//Creates a Schema for a state
 const stateSchema = new Schema({
     code: {
         type: String,

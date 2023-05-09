@@ -1,13 +1,13 @@
 {
-  "name": "13tut",
+  "name": "finalproject",
   "version": "1.0.0",
-  "description": "MongoDB tutorial",
+  "description": "PDeLorme Final Project",
   "main": "server.js",
   "scripts": {
     "start": "node server",
     "dev": "nodemon server"
   },
-  "author": "Dave Gray",
+  "author": "Phillip DeLorme",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
